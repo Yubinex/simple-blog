@@ -1,4 +1,15 @@
 <div class="container">
-  <h1>My Home Page</h1>
-  <p>You can <%= link_to "read more", about_path %> about this blog.</p>
+  <div class="post-list">
+    <h1>Latest Posts</h1>
+    <div class="post-items">
+      <% @latest_posts.each do |post| %>
+        <div class="post-item">
+          <%= render post %>
+          <p class="post-link">
+            <%= link_to "Show this post", post, class: "btn btn-primary" %>
+          </p>
+        </div>
+      <% end %>
+    </div>
+  </div>
 </div>
