@@ -1,9 +1,10 @@
-<div id="<%= dom_id post %>">
-  <h2><%= post.title %></h2>
-  <h6 style='opacity: 0.6;'>
+<div class="post" id="<%= dom_id post %>">
+  <h2 class="post-title"><%= post.title %></h2>
+  <h6 class="post-author">
     posted by <%= (post.user.name.present? ? post.user.name : post.user.email) %>
   </h6>
-  <div>
+  <div class="post-body">
     <%= post.body %>
   </div>
 </div>
+

@@ -13,3 +13,88 @@
  *= require_tree .
  *= require_self
  */
+
+/* Styling for the entire post container */
+.post {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the post title */
+.post-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Styling for the post author info */
+.post-author {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #666;
+}
+
+/* Styling for the post body */
+.post-body {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* Styling for form error messages */
+.alert-danger {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+/* Styling for form input fields */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Styling for the entire post list section */
+.post-list {
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* Styling for the post items */
+.post-items {
+  display: block;
+}
+
+/* Styling for individual post item */
+.post-item {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Add space between each post item */
+.post-item + .post-item {
+  margin-top: 20px;
+}
+
+/* Styling for the post actions */
+.post-actions {
+  display: flex;
+  gap: 5px;
+}

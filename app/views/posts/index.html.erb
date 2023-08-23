@@ -1,12 +1,16 @@
 <div class="container">
-  <h1>Posts</h1>
-  <div id="posts">
-    <% @posts.each do |post| %>
-      <%= render post %>
-      <p>
-        <%= link_to "Show this post", post %>
-      </p>
-    <% end %>
+  <div class="post-list">
+    <h1>Posts</h1>
+    <div class="post-items">
+      <% @posts.each do |post| %>
+        <div class="post-item">
+          <%= render post %>
+          <p class="post-link">
+            <%= link_to "Show this post", post, class: "btn btn-primary" %>
+          </p>
+        </div>
+      <% end %>
+    </div>
+    <%= link_to "New post", new_post_path, class: "btn btn-success", style:'margin: 20px' %>
   </div>
-  <%= link_to "New post", new_post_path %>
 </div>
